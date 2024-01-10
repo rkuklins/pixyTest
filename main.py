@@ -11,13 +11,10 @@ from pixycamev3.pixy2 import Pixy2
 # EV3 Display
 lcd = Display()
 
-# Connect TouchSensor
+# Connect TouchSensor to port #4
 ts = TouchSensor(INPUT_4)
 
-# Set LEGO port for Pixy on input port 
-
-
-
+# Set LEGO port for Pixy on input port 1 
 pixy2 = Pixy2(port=1, i2c_address=0x54)
 version = pixy2.get_version()
 print('Hardware: ', version.hardware)
